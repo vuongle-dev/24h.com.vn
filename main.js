@@ -28,6 +28,8 @@ window.addEventListener("load", function() {
     console.log(menuLeft);
     menuButton.addEventListener('mouseover', function() {menuLeft.style.display = 'block'});
     menuButton.addEventListener('mouseout', function() {menuLeft.style.display = 'none'})
+    menuLeft.addEventListener('mouseover', function() {menuLeft.style.display = 'block'});
+    menuLeft.addEventListener('mouseout', function() {menuLeft.style.display = 'none'})
     const menuVertical = document.querySelectorAll('.menu-vertical > li > a');
     for (let i = 0; i < menuVertical.length; i++) {
         let menuDot = document.createElement('img');
